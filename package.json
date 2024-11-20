@@ -1,0 +1,19 @@
+{
+  "name": "auto-scaling-simulator",
+  "version": "1.0.0",
+  "description": "Kubernetes Auto Scaling Simulator",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "NODE_CONFIG_DIR=./backend/config node backend/index.js",
+    "dev": "NODE_CONFIG_DIR=./backend/config nodemon backend/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "ws": "^8.2.3",
+    "config": "^3.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

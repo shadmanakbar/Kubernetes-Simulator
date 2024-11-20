@@ -1,0 +1,48 @@
+{
+    "minReplicas": 1,
+    "maxReplicas": 10,
+    "cpuThreshold": 60,
+    "memoryThreshold": 60,
+    "scalingDelay": 30,
+    "podResources": {
+        "requests": {
+            "cpu": "1000m",
+            "memory": "4Gi"
+        },
+        "limits": {
+            "cpu": "4000m",
+            "memory": "5Gi"
+        }
+    },
+    "userResources": {
+        "cpu": 0.5,
+        "memory": 1.0
+    },
+    "simulationInterval": 5000,
+    "defaultLoadProfile": {
+        "pattern": "random", 
+        "baseLoad": 100,
+        "amplitude": 200,
+        "period": 10,
+        "initialUsers": 100,
+        "maxUsers": 1000,
+        "userGrowthRate": 200,
+        "spikeProbability": 0.1,
+        "spikeMultiplier": 2.0
+    },
+    "userPatterns": {
+        "light": {
+            "cpu": 0.1,
+            "memory": 0.7
+        },
+        "medium": {
+            "cpu": 0.5,
+            "memory": 1.0
+        },
+        "heavy": {
+            "cpu": 0.8,
+            "memory": 1.5
+        }
+    }
+}
+  
